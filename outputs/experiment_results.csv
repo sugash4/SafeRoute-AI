@@ -1,0 +1,21 @@
+scenario,start,goal,algorithm,reached,weighted_cost,distance,risk_exposure,congestion_exposure,nodes_expanded,route
+Normal operation,Library,South Exit,BFS,True,18.8,13.0,0.0,2.9,12,Library -> Central Atrium -> Science Lab -> South Exit
+Normal operation,Library,South Exit,DFS,True,18.8,13.0,0.0,2.9,6,Library -> Central Atrium -> Science Lab -> South Exit
+Normal operation,Library,South Exit,Greedy,True,18.7,13.0,0.0,2.85,4,Library -> Computer Lab -> Admin Block -> South Exit
+Normal operation,Library,South Exit,A*,True,17.5,13.0,0.0,2.25,7,Library -> Computer Lab -> Science Lab -> South Exit
+Library fire,North Gate,East Exit,BFS,True,33.875,10.0,4.075,1.75,11,North Gate -> Library -> Lecture Hall -> East Exit
+Library fire,North Gate,East Exit,DFS,True,37.0,18.0,1.5,5.75,6,North Gate -> Cafeteria -> Central Atrium -> Computer Lab -> Admin Block -> East Exit
+Library fire,North Gate,East Exit,Greedy,True,33.875,10.0,4.075,1.75,4,North Gate -> Library -> Lecture Hall -> East Exit
+Library fire,North Gate,East Exit,A*,True,32.1,26.0,0.0,3.05,12,North Gate -> Cafeteria -> Sports Hall -> South Junction -> Science Lab -> South Exit -> Admin Block -> East Exit
+Science lab leak,Library,South Exit,BFS,True,40.85,13.0,4.41,2.9,12,Library -> Central Atrium -> Science Lab -> South Exit
+Science lab leak,Library,South Exit,DFS,True,40.85,13.0,4.41,2.9,6,Library -> Central Atrium -> Science Lab -> South Exit
+Science lab leak,Library,South Exit,Greedy,True,25.45,13.0,1.35,2.85,4,Library -> Computer Lab -> Admin Block -> South Exit
+Science lab leak,Library,South Exit,A*,True,19.1,15.0,0.0,2.05,8,Library -> Lecture Hall -> East Exit -> Admin Block -> South Exit
+Atrium congestion,Cafeteria,East Exit,BFS,True,31.2,14.0,0.6,7.1,12,Cafeteria -> Central Atrium -> Computer Lab -> Admin Block -> East Exit
+Atrium congestion,Cafeteria,East Exit,DFS,True,31.2,14.0,0.6,7.1,5,Cafeteria -> Central Atrium -> Computer Lab -> Admin Block -> East Exit
+Atrium congestion,Cafeteria,East Exit,Greedy,True,30.8,14.0,0.6,6.9,5,Cafeteria -> Central Atrium -> Computer Lab -> Lecture Hall -> East Exit
+Atrium congestion,Cafeteria,East Exit,A*,True,18.7,14.0,0.0,2.35,7,Cafeteria -> North Gate -> Library -> Lecture Hall -> East Exit
+Blocked east wing,Computer Lab,East Exit,BFS,True,19.2,16.0,0.0,1.6,12,Computer Lab -> Science Lab -> South Exit -> Admin Block -> East Exit
+Blocked east wing,Computer Lab,East Exit,DFS,True,19.2,16.0,0.0,1.6,12,Computer Lab -> Science Lab -> South Exit -> Admin Block -> East Exit
+Blocked east wing,Computer Lab,East Exit,Greedy,True,19.2,16.0,0.0,1.6,8,Computer Lab -> Science Lab -> South Exit -> Admin Block -> East Exit
+Blocked east wing,Computer Lab,East Exit,A*,True,19.2,16.0,0.0,1.6,8,Computer Lab -> Science Lab -> South Exit -> Admin Block -> East Exit
